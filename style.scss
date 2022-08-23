@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body{
+    background: hsl(0, 0%, 81%);
+}
+
+.container{
+    margin: 3rem 0;
+}
+
+.card{
+    margin: 2rem;
+    border-radius: 0.5rem;
+    border:1px solid black;
+    padding: 1rem;
+
+    .card-heading{
+        display: flex;
+        align-items: center;
+
+        .card-img{
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+        }
+
+        .card-heading-text{
+            display: flex;
+            flex-direction: column;
+
+            .card-heading-name{
+
+            }
+
+            .card-heading-title{
+
+            }
+        }
+    }
+
+    .card-quote{
+        padding: 1rem 0;
+    }
+}
+
+$colours:hsl(263, 55%, 52%),hsl(217, 19%, 35%),hsl(0, 0%, 100%),hsl(219, 29%, 14%),hsl(0, 0%, 100%);
+
+@for $i from 1 through length($colours) {
+    .card:nth-child(#{$i})
+    {
+        background-color:unquote(nth($colours, $i));
+    }
+}
+
+
+
+

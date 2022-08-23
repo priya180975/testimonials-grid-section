@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+  background: #cfcfcf;
+}
+
+.container {
+  margin: 3rem 0;
+}
+
+.card {
+  margin: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.card .card-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .card-heading .card-img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.card .card-heading .card-heading-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card .card-quote {
+  padding: 1rem 0;
+}
+
+.card:nth-child(1) {
+  background-color: #7541c8;
+}
+
+.card:nth-child(2) {
+  background-color: #48556a;
+}
+
+.card:nth-child(3) {
+  background-color: white;
+}
+
+.card:nth-child(4) {
+  background-color: #19212e;
+}
+
+.card:nth-child(5) {
+  background-color: white;
+}
+/*# sourceMappingURL=style.css.map */
