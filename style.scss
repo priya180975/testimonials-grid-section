@@ -18,8 +18,10 @@ body{
 .card{
     margin: 2rem;
     border-radius: 0.5rem;
-    border:1px solid black;
-    padding: 1rem;
+    // border:1px solid black;
+    padding: 2rem;
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0rem 0 2rem 0.5rem #19212e33;
 
     .card-heading{
         display: flex;
@@ -29,24 +31,38 @@ body{
             border-radius: 50%;
             width: 30px;
             height: 30px;
+            margin-right: 1rem;
+            // border: 2px solid hsla(0, 0%, 81%, 0.541);
+            box-shadow: 0 0 0rem 0.1rem hsla(0, 0%, 81%, 0.54);
+            // box-shadow: 0 0 1rem 1rem hsl(0, 0%, 81%);
         }
 
         .card-heading-text{
             display: flex;
             flex-direction: column;
+            font-size: 0.8rem;
+            font-weight: 400;
 
             .card-heading-name{
-
+                // font-size: 0.9rem;
             }
 
             .card-heading-title{
-
+                color: hsla(0, 0%, 81%, 0.541);
             }
         }
     }
 
     .card-quote{
         padding: 1rem 0;
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+
+    .card-desc{
+        color:hsl(0, 0%, 81%); 
+        font-size: 0.9rem;
+        line-height: 1.3rem;
     }
 }
 
@@ -59,6 +75,22 @@ $colours:hsl(263, 55%, 52%),hsl(217, 19%, 35%),hsl(0, 0%, 100%),hsl(219, 29%, 14
     }
 }
 
+.card:nth-child(3),.card:nth-child(5)
+{
+    color: hsl(219, 29%, 14%);
+    .card-heading-title{
+        color: hsla(217, 19%, 35%, 0.507) !important;
+    }
+    .card-desc{
+        color: hsl(217, 19%, 35%) !important;
+    }
+}
+
+.card:nth-child(1){
+    background-image: url("./images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: 90% 0%;
+}
 
 
 
