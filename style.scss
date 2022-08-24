@@ -86,11 +86,17 @@ $colours:hsl(263, 55%, 52%),hsl(217, 19%, 35%),hsl(0, 0%, 100%),hsl(219, 29%, 14
 }
 
 
-@media(min-width:900px)
+@media(min-width:800px)
 {
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     .container{
-        padding: 2rem;
-        margin: 0 auto;
         width: 80%;
         display: grid;
         grid-template-columns: repeat(4,1fr);
